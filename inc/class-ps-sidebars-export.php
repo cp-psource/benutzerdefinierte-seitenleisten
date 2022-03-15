@@ -63,7 +63,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 	 */
 	public function widget_header() {
 		?>
-		<a href="#" class="cs-action btn-export"><?php _e( 'Import / Export Sidebars', 'ps-sidebars' ); ?></a>
+		<a href="#" class="cs-action btn-export"><?php _e( 'Seitenleisten importieren/exportieren', 'ps-sidebars' ); ?></a>
 		<?php
 	}
 
@@ -99,7 +99,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 		if ( ! current_user_can( self::$cap_required ) ) {
 			$req = self::req_err(
 				$req,
-				__( 'You do not have permission for this', 'ps-sidebars' )
+				__( 'Du hast keine Berechtigung dafür', 'ps-sidebars' )
 			);
 		} else {
 			switch ( $ajax_action ) {
@@ -286,7 +286,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			);
 			$req = self::req_err(
 				$req,
-				__( 'You do not have permission for export sidebars.', 'ps-sidebars' )
+				__( 'Du hast keine Berechtigung zum Exportieren von Seitenleisten.', 'ps-sidebars' )
 			);
 			self::json_response( $req );
 		}
@@ -386,7 +386,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			);
 			$req = self::req_err(
 				$req,
-				__( 'You do not have permission for export sidebars.', 'ps-sidebars' )
+				__( 'Du hast keine Berechtigung zum Exportieren von Seitenleisten.', 'ps-sidebars' )
 			);
 			self::json_response( $req );
 		}
@@ -400,20 +400,20 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 				case UPLOAD_ERR_NO_FILE:
 					return self::req_err(
 						$req,
-						__( 'No file was uploaded', 'ps-sidebars' )
+						__( 'Es wurde keine Datei hochgeladen', 'ps-sidebars' )
 					);
 
 				case UPLOAD_ERR_INI_SIZE:
 				case UPLOAD_ERR_FORM_SIZE:
 					return self::req_err(
 						$req,
-						__( 'Import file is too big', 'ps-sidebars' )
+						__( 'Importdatei ist zu groß', 'ps-sidebars' )
 					);
 
 				default:
 					return self::req_err(
 						$req,
-						__( 'Something went wrong', 'ps-sidebars' )
+						__( 'Etwas ist schief gelaufen', 'ps-sidebars' )
 					);
 			}
 
@@ -436,13 +436,13 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			} else {
 				return self::req_err(
 					$req,
-					__( 'Unexpected import format', 'ps-sidebars' )
+					__( 'Unerwartetes Importformat', 'ps-sidebars' )
 				);
 			}
 		} else {
 			return self::req_err(
 				$req,
-				__( 'No file was uploaded', 'ps-sidebars' )
+				__( 'Es wurde keine Datei hochgeladen', 'ps-sidebars' )
 			);
 		}
 
@@ -471,7 +471,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			);
 			$req = self::req_err(
 				$req,
-				__( 'You do not have permission for import sidebars.', 'ps-sidebars' )
+				__( 'Du hast keine Berechtigung zum Importieren von Seitenleisten.', 'ps-sidebars' )
 			);
 			self::json_response( $req );
 		}
@@ -523,8 +523,8 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			return self::req_err(
 				$req,
 				__(
-					'Something unexpected happened and we could not finish ' .
-					'the import. Please try again.', 'ps-sidebars'
+					'Etwas Unerwartetes ist passiert und wir konnten nicht fertig ' .
+					'Importieren. Bitte versuche es erneut.', 'ps-sidebars'
 				)
 			);
 		}
@@ -731,8 +731,8 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			self::set_benutzerdefinierte_seitenleisten( $sidebars );
 			$msg[] = sprintf(
 				_n(
-					'Imported %d custom sidebar!',
-					'Imported %d custom sidebars!',
+					'%d benutzerdefinierte Seitenleiste importiert!',
+					'%d benutzerdefinierte Seitenleisten importiert!',
 					$sidebar_count,
 					'ps-sidebars'
 				),
@@ -744,7 +744,7 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 		// Import plugin settings
 		if ( ! empty( $data['options'] ) ) {
 			self::set_options( $data['options'] );
-			$msg[] = __( 'Plugin options were imported!', 'ps-sidebars' );
+			$msg[] = __( 'Plugin-Optionen wurden importiert!', 'ps-sidebars' );
 		}
 
 		// =====================================================================
@@ -794,8 +794,8 @@ class BenutzerdefinierteSeitenleistenExport extends BenutzerdefinierteSeitenleis
 			wp_set_sidebars_widgets( $def_sidebars );
 			$msg[] = sprintf(
 				_n(
-					'Imported %d widget!',
-					'Imported %d widgets!',
+					'Importiertes %d-Widget!',
+					'Importierte %d Widgets!',
 					$widget_count,
 					'ps-sidebars'
 				),

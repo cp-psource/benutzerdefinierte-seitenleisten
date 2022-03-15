@@ -43,7 +43,7 @@
 		'btn_new': "<?php _e( 'Erstelle Seitenleiste', 'ps-sidebars' ); ?>",
 		'title_delete': "<?php _e( 'Lösche Seitenleiste', 'ps-sidebars' ); ?>",
 		'title_location': "<?php _e( 'Definiere wo diese Seitenleiste angezeigt werden soll.', 'ps-sidebars' ); ?>",
-		'title_export': "<?php _e( 'Import / Export Sidebars', 'ps-sidebars' ); ?>",
+		'title_export': "<?php _e( 'Seitenleisten importieren/exportieren', 'ps-sidebars' ); ?>",
 		'benutzerdefinierte_seitenleisten': "<?php _e( 'Benutzerdefinierte Seitenleisten', 'ps-sidebars' ); ?>",
 		'theme_sidebars': "<?php _e( 'Theme Seitenleisten', 'ps-sidebars' ); ?>",
 		'ajax_error': "<?php _e( 'Daten aus WordPress konnten nicht geladen werden ...', 'ps-sidebars' ); ?>",
