@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Benutzerdefinierte Seitenleisten
+ * Plugin Name: PS Power-Seitenleisten
  * Plugin URI:  https://n3rds.work/piestingtal-source-project/ps-seitenleisten/
  * Description: Ermöglicht das Erstellen von Widget-Bereichen und benutzerdefinierten Seitenleisten. Ersetze ganze Seitenleisten oder einzelne Widgets für bestimmte Beiträge und Seiten.
- * Version:     3.5.6
+ * Version:     3.5.7
  * Author:      WMS N@W
  * Author URI:  https://n3rds.work
  * Textdomain:  ps-sidebars
@@ -31,7 +31,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 This plugin was originally developed by Javier Marquez.
 http://arqex.com/
 */
-require 'inc/external/psource-plugin-update/plugin-update-checker.php';
+require 'psource/psource-plugin-update/psource-plugin-updater.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=benutzerdefinierte-seitenleisten', 
 	__FILE__, 
