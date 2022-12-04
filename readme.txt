@@ -44,7 +44,11 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 
 == ChangeLog ==
 
-= 3.5.6 = DerN3rd =
+= 3.5.8 = DerN3rd =
+
+* PO Datei hinzugefügt
+
+= 3.5.7 = DerN3rd =
 
 * Erste Veröffentlichung
 
