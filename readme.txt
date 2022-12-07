@@ -47,6 +47,7 @@ Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswor
 = 3.5.8 = DerN3rd =
 
 * PO Datei hinzugefügt
+* Psource Updater 1.2 (Securtiy Fixes, PhP8 Anpassungen)
 
 = 3.5.7 = DerN3rd =
 
