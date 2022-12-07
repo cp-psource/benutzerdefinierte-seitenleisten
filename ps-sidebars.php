@@ -3,7 +3,7 @@
  * Plugin Name: PS Power-Seitenleisten
  * Plugin URI:  https://n3rds.work/piestingtal-source-project/ps-seitenleisten/
  * Description: Ermöglicht das Erstellen von Widget-Bereichen und benutzerdefinierten Seitenleisten. Ersetze ganze Seitenleisten oder einzelne Widgets für bestimmte Beiträge und Seiten.
- * Version:     3.5.7
+ * Version:     3.5.8
  * Author:      WMS N@W
  * Author URI:  https://n3rds.work
  * Textdomain:  ps-sidebars
